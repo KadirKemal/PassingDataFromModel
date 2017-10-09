@@ -15,6 +15,8 @@
 		07247B751F7B9A0900E121C7 /* CallbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07247B741F7B9A0900E121C7 /* CallbackModel.m */; };
 		07247B781F7B9A1300E121C7 /* DelegateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07247B771F7B9A1300E121C7 /* DelegateModel.m */; };
 		07247B7B1F7B9A1E00E121C7 /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07247B7A1F7B9A1E00E121C7 /* NotificationModel.m */; };
+		07496ECC1F8B4B3D00FB1975 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07496ECB1F8B4B3D00FB1975 /* KVOModel.m */; };
+		07496ECF1F8B4CC100FB1975 /* ByKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07496ECE1F8B4CC100FB1975 /* ByKVOViewController.m */; };
 		07FE55361F7BB71E001369AD /* ByCallbacksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07247B6C1F7B999A00E121C7 /* ByCallbacksViewController.m */; };
 		07FE55371F7BB71E001369AD /* ByDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07247B6E1F7B999A00E121C7 /* ByDelegateViewController.m */; };
 		07FE55381F7BB71E001369AD /* ByNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07247B701F7B999A00E121C7 /* ByNotificationViewController.m */; };
@@ -44,6 +46,10 @@
 		07247B771F7B9A1300E121C7 /* DelegateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateModel.m; sourceTree = "<group>"; };
 		07247B791F7B9A1E00E121C7 /* NotificationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationModel.h; sourceTree = "<group>"; };
 		07247B7A1F7B9A1E00E121C7 /* NotificationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationModel.m; sourceTree = "<group>"; };
+		07496ECA1F8B4B3D00FB1975 /* KVOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
+		07496ECB1F8B4B3D00FB1975 /* KVOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
+		07496ECD1F8B4CC100FB1975 /* ByKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ByKVOViewController.h; sourceTree = "<group>"; };
+		07496ECE1F8B4CC100FB1975 /* ByKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ByKVOViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,8 @@
 				07247B771F7B9A1300E121C7 /* DelegateModel.m */,
 				07247B791F7B9A1E00E121C7 /* NotificationModel.h */,
 				07247B7A1F7B9A1E00E121C7 /* NotificationModel.m */,
+				07496ECA1F8B4B3D00FB1975 /* KVOModel.h */,
+				07496ECB1F8B4B3D00FB1975 /* KVOModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 				07247B6E1F7B999A00E121C7 /* ByDelegateViewController.m */,
 				07247B6F1F7B999A00E121C7 /* ByNotificationViewController.h */,
 				07247B701F7B999A00E121C7 /* ByNotificationViewController.m */,
+				07496ECD1F8B4CC100FB1975 /* ByKVOViewController.h */,
+				07496ECE1F8B4CC100FB1975 /* ByKVOViewController.m */,
 				07247B711F7B999A00E121C7 /* ViewController.h */,
 				07247B721F7B999A00E121C7 /* ViewController.m */,
 			);
@@ -190,11 +200,13 @@
 			files = (
 				07FE55361F7BB71E001369AD /* ByCallbacksViewController.m in Sources */,
 				07FE55371F7BB71E001369AD /* ByDelegateViewController.m in Sources */,
+				07496ECC1F8B4B3D00FB1975 /* KVOModel.m in Sources */,
 				07FE55381F7BB71E001369AD /* ByNotificationViewController.m in Sources */,
 				07FE55391F7BB71E001369AD /* ViewController.m in Sources */,
 				07247B7B1F7B9A1E00E121C7 /* NotificationModel.m in Sources */,
 				07247B751F7B9A0900E121C7 /* CallbackModel.m in Sources */,
 				071533431F7521BA000EA904 /* main.m in Sources */,
+				07496ECF1F8B4CC100FB1975 /* ByKVOViewController.m in Sources */,
 				071533351F7521BA000EA904 /* AppDelegate.m in Sources */,
 				07247B781F7B9A1300E121C7 /* DelegateModel.m in Sources */,
 			);

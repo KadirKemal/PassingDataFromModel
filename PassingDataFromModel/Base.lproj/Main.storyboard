@@ -38,14 +38,23 @@
                                     <segue destination="Arh-CF-aDD" kind="show" id="vst-Ef-N2W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dv-d0-kKj">
+                                <rect key="frame" x="115" y="354" width="145" height="30"/>
+                                <state key="normal" title="Passing Data By KVO"/>
+                                <connections>
+                                    <segue destination="r6w-Hh-JqH" kind="show" id="A5g-of-iM9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SQB-zX-CSn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F89-CR-Njk"/>
                             <constraint firstItem="7hX-dF-OhQ" firstAttribute="top" secondItem="SQB-zX-CSn" secondAttribute="bottom" constant="50" id="HnD-d0-5mp"/>
                             <constraint firstItem="SQB-zX-CSn" firstAttribute="top" secondItem="5KK-GJ-6ha" secondAttribute="bottom" constant="50" id="VpV-25-vNd"/>
+                            <constraint firstItem="1Dv-d0-kKj" firstAttribute="top" secondItem="7hX-dF-OhQ" secondAttribute="bottom" constant="50" id="YNC-5c-VpO"/>
                             <constraint firstItem="5KK-GJ-6ha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="d3e-bJ-hWh"/>
                             <constraint firstItem="5KK-GJ-6ha" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="keR-o8-cSU"/>
+                            <constraint firstItem="1Dv-d0-kKj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tgN-1w-E5h"/>
                             <constraint firstItem="7hX-dF-OhQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zcU-Be-4Ln"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -204,6 +213,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6U-gR-UUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7" y="606"/>
+        </scene>
+        <!--ByKVO View Controller-->
+        <scene sceneID="bOB-on-UiU">
+            <objects>
+                <viewController id="r6w-Hh-JqH" customClass="ByKVOViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YE3-Gv-QPI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXM-Am-Us7">
+                                <rect key="frame" x="98" y="114" width="178" height="30"/>
+                                <state key="normal" title="Request Data From Model"/>
+                                <connections>
+                                    <action selector="onClickedRequestData:" destination="r6w-Hh-JqH" eventType="touchUpInside" id="wMh-W4-TRa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zd-DQ-kqW">
+                                <rect key="frame" x="16" y="194" width="343" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KGj-zJ-Nfk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Zd-DQ-kqW" firstAttribute="leading" secondItem="lO0-27-sNG" secondAttribute="leading" constant="16" id="11w-Xt-SzX"/>
+                            <constraint firstItem="9Zd-DQ-kqW" firstAttribute="centerX" secondItem="lO0-27-sNG" secondAttribute="centerX" id="1za-eJ-TIl"/>
+                            <constraint firstItem="9Zd-DQ-kqW" firstAttribute="top" secondItem="eXM-Am-Us7" secondAttribute="bottom" constant="50" id="3OD-dP-5Ah"/>
+                            <constraint firstItem="lO0-27-sNG" firstAttribute="trailing" secondItem="9Zd-DQ-kqW" secondAttribute="trailing" constant="16" id="SLZ-3u-R75"/>
+                            <constraint firstItem="eXM-Am-Us7" firstAttribute="top" secondItem="lO0-27-sNG" secondAttribute="top" constant="50" id="fIz-L4-PH5"/>
+                            <constraint firstItem="eXM-Am-Us7" firstAttribute="centerX" secondItem="lO0-27-sNG" secondAttribute="centerX" id="iTT-1h-Rc1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lO0-27-sNG"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="9Zd-DQ-kqW" id="fMO-MM-GWC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ho-GP-r2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="1719"/>
         </scene>
     </scenes>
 </document>
